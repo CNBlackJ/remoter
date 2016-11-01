@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag 'essentials' %>
+<%= stylesheet_link_tag 'layout' %>
+<%= stylesheet_link_tag 'header-1' %>
+<%= javascript_include_tag 'frontpages' %>
+
+<!-- PAGE HEADER -->
+<section id="home" class="page-header page-header-lg parallax parallax-4" style="height:500px;background-image:url(<%= image_url('frontpage/index.jpg') %>)">
+  <div class="overlay dark-2"><!-- dark overlay [1 to 9 opacity] --></div>
+
+  <div class="container">
+
+    <h1>ABOUT US</h1>
+    <span class="font-lato size-18 weight-300">We believe in Simple &amp; Creative</span>
+
+    <!-- breadcrumbs -->
+    <ol class="breadcrumb">
+      <li><a href="#job">Home</a></li>
+      <li><a href="#team">Pages</a></li>
+      <li class="active">About Us</li>
+    </ol><!-- /breadcrumbs -->
+
+  </div>
+</section>
+<!-- /PAGE HEADER -->
+
+<div class="text-center">
+  <i class="fa fa-angle-double-down" style="font-size: 10em"></i>
+</div>
+
+<section id="job">
+  <%= render 'job' %>
+</section>
+
+<section id="team">
+  <%= render 'team' %>
+</section>
+
+<section id="article">
+  <%= render 'article' %>
+</section>
+
+<a href="#" id="toTop"></a>

@@ -1,0 +1,47 @@
+<%= stylesheet_link_tag 'essentials' %>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    团队管理
+  </div>
+  <div class="panel-body">
+    <div class="row">
+
+      <% @teams.each do |team| %>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <%= image_tag 'peopel/-min.jpg', class: "img-responsive" %>
+              <div class="caption">
+                <h4 class="nomargin"><%= team.title %></h4>
+                <small class="margin-bottom-20 block"><%= team.description %></small>
+
+                <p><%= team.follow %></p>
+                <a href="#" class="social-icon social-icon-sm social-facebook">
+                  <i class="fa fa-github"></i>
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="#" class="social-icon social-icon-sm social-twitter">
+                  <i class="fa fa-stack-overflow"></i>
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="#" class="social-icon social-icon-sm social-google">
+                  <i class="fa fa-wechat"></i>
+                  <i class="fa fa-wechat"></i>
+                </a>
+                <a href="#" class="social-icon social-icon-sm social-google">
+                  <i class="fa fa-envelope-o"></i>
+                  <i class="fa fa-envelope-o"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+      <% end %>
+
+    </div>
+
+  </div>
+
+</div>
+

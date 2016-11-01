@@ -1,0 +1,194 @@
+<!-- page title -->
+<header id="page-header">
+  <h1>个人资料</h1>
+  <ol class="breadcrumb">
+    <li>
+      <%= link_to '控制面板', dashboards_index_path %>
+    </li>
+    <li class="active">个人资料</li>
+  </ol>
+</header>
+<!-- /page title -->
+
+<div id="content" class="padding-20">
+
+  <div class="page-profile">
+
+    <div class="col-md-3 col-lg-4">
+
+      <section class="panel">
+        <div class="panel-body noradius padding-10" style="background-color: #eee">
+          <figure class="margin-bottom-10"><!-- image -->
+            <%= image_tag('avatars/mine.jpg', :class => 'img-responsive') %>
+          </figure><!-- /image -->
+
+          <!-- progress bar -->
+          <h6 class="progress-head">
+            <%= link_to '完善资料', edit_profile_path(@profile) %>
+            <span class="pull-right">60%</span></h6>
+          <div class="progress progress-xs">
+            <div class="progress-bar" role="progressbar" style="width: 60%;"></div>
+          </div><!-- /progress bar -->
+
+          <div>
+            <!-- information -->
+            <ul class="list-unstyled size-13">
+              <li>
+                <div class="col-md-6 padding-0">
+                  <div class="text-gray"><i class="fa fa-check"></i>&nbsp;实名认证</div>
+                </div>
+                <div class="col-md-6">
+                  <%= @profile.name %>
+                </div>
+              </li>
+
+              <li>
+                <div class="col-md-6 padding-0">
+                  <div class="text-gray"><i class="fa fa-check"></i>&nbsp;邮箱认证</div>
+                </div>
+                <div class="col-md-6">
+                  <%= @profile.email %>
+                </div>
+              </li>
+
+              <li>
+                <div class="col-md-6 padding-0">
+                  <div class="text-gray"><i class="fa fa-check"></i>&nbsp;手机验证</div>
+                </div>
+                <div class="col-md-6">
+                  <%= @profile.mobile %>
+                </div>
+              </li>
+              <li>
+                <div class="col-md-6 padding-0">
+                  <div class="text-gray"><i class="fa fa-check"></i>&nbsp;所在城市</div>
+                </div>
+                <div class="col-md-6">
+                  <%= @profile.province %>
+                </div>
+              </li>
+            </ul><!-- /updated -->
+          </div>
+          <!-- About -->
+          <div class="padding-top-60">
+            <h3 class="text-black">
+              <%= @profile.name %>
+              <small class="text-gray size-14"> / CEO</small>
+            </h3>
+            <p class="size-12">
+              <%= @profile.introduce %>
+            </p>
+            <!-- /About -->
+          </div>
+          <hr class="half-margins"/>
+
+          <!-- Social -->
+          <h6>Follow Me</h6>
+          <a href="#" class="btn ico-only btn-facebook btn-xs" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="btn ico-only btn-twitter btn-xs" title="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="btn ico-only btn-google-plus btn-xs" title="Google plus"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="btn ico-only btn-linkedin btn-xs" title="Linked In"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="btn ico-only btn-pinterest btn-xs" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+          <a href="#" class="btn ico-only btn-flickr btn-xs" title="Flickr"><i class="fa fa-flickr"></i></a>
+          <a href="#" class="btn ico-only btn-tumblr btn-xs" title="Tumblr"><i class="fa fa-tumblr"></i></a>
+          <a href="#" class="btn ico-only btn-skype btn-xs" title="Skype"><i class="fa fa-skype"></i></a>
+          <a href="#" class="btn ico-only btn-stackoverflow btn-xs" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a>
+          <a href="#" class="btn ico-only btn-instagram btn-xs" title="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="btn ico-only btn-dribbble btn-xs" title="Dribble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" class="btn ico-only btn-youtube btn-xs" title="Youtube"><i class="fa fa-youtube"></i></a>
+          <a href="#" class="btn ico-only btn-vimeo btn-xs" title="Vimeo"><i class="fa fa-vimeo-square"></i></a>
+          <a href="#" class="btn ico-only btn-rss btn-xs" title="Rss"><i class="fa fa-rss"></i></a>
+          <!-- /Social -->
+
+        </div>
+      </section>
+
+    </div>
+
+    <div class="col-md-8 col-md-7">
+      <!-- TIMELINE -->
+      <section class="panel">
+        <div class="panel-body noradius padding-10" style="background-color: #eee">
+
+          <!--
+            TIMELINE CENTER
+
+            AVAILABLE CLASSES:
+              .timeline-desc-line = add text line
+          -->
+          <ul class="timeline_center list-unstyled">
+            <li>
+              <h3>
+                <span><%= @profile.created_at.strftime('%Y-%m-%d') %></span>
+                加入我们
+              </h3>
+              <div class="timeline-desc timeline-desc-line">
+                您是我们第<strong><%= @profile.id %></strong>个用户
+              </div>
+            </li>
+
+            <li>
+              <h3>
+                <span>13 August 2015</span>
+                写了了第一条评论
+              </h3>
+              <div class="timeline-desc timeline-desc-line">
+                评论内容是：
+              </div>
+              <a href="portfolio-single-parallax.html" class="btn btn-xs btn-default margin-top-20">详情</a>
+            </li>
+
+            <li>
+              <h3>
+                <span>29 June 2015</span>
+                发表了第一篇文章
+              </h3>
+              <div class="timeline-desc timeline-desc-line">
+                文章标题是：
+              </div>
+              <a href="portfolio-single-parallax.html" class="btn btn-xs btn-default margin-top-20">详情</a>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+      <!-- /TIMELINE -->
+
+    </div>
+
+  </div>
+</div>
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Profiles</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Nickname</th>
+    <th>Avatar</th>
+    <th>Sex</th>
+    <th>Introduce</th>
+    <th>Province</th>
+    <th>City</th>
+    <th>Wechat</th>
+    <th>Weibo</th>
+    <th>Qq</th>
+    <th>User</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profile', new_profile_path %>

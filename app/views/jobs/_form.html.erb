@@ -1,0 +1,88 @@
+<%= form_for @job, :html => { :class => "form-horizontal job" } do |f| %>
+
+  <% if @job.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @job.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :title, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :category, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :category, :class => 'form-control' %>
+    </div>
+
+  </div>
+  <div class="form-group">
+    <%= f.label :summary, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :summary, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :description, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :requirement, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :requirement, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :read, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :read, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :follow, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :follow, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :user_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :user_id, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :team_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :team_id, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :comment, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :comment, :class => 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                jobs_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>

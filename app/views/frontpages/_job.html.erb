@@ -1,0 +1,64 @@
+<div class="container">
+
+  <div class="row">
+
+    <!-- RIGHT -->
+    <div class="col-lg-12 col-md-12 col-sm-12">
+
+      <h2>最新工作<span class="size-18">/ Get update from us!</span></h2>
+
+      <% @jobs.each do |job| %>
+
+          <!-- news item -->
+          <div class="inews-item">
+            <a class="inews-thumbnail" href="#">
+              <img class="img-responsive" src="<%= image_path'frontpage/job/a1-min.jpg' %>" alt="image"/>
+            </a>
+
+            <div class="inews-item-content">
+
+              <div class="inews-date-wrapper">
+                <span class="inews-date-day"><%= job.created_at.day %></span>
+                <span class="inews-date-month"><%= job.created_at.month %></span>
+                <span class="inews-date-year"><%= job.created_at.year %></span>
+              </div>
+
+              <div class="inews-content-inner">
+
+                <h3 class="size-20"><a href="#"><%= job.title %></a></h3>
+                <ul class="blog-post-info list-inline noborder margin-bottom-20 nopadding">
+                  <li>
+                    <a href="page-profile.html">
+                      <i class="fa fa-user"></i>
+                      <span class="font-lato"><%= job.user.profile.name %></span>
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-folder-open-o"></i>
+
+                    <a class="category" href="#">
+                      <span class="font-lato"><%= job.category %></span>
+                    </a>
+                    <a class="category" href="#">
+                      <span class="font-lato">Photography</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <p>
+                  <%= job.description %>
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- /news item -->
+
+      <% end %>
+
+    </div>
+
+  </div>
+
+</div>

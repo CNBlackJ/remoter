@@ -1,0 +1,61 @@
+<aside id="aside">
+  <nav id="sideNav"><!-- MAIN MENU -->
+    <ul class="nav nav-list">
+      <li class="active"><!-- dashboard -->
+        <%= link_to "控制面板", dashboards_index_path, :class => 'dashboard' %>
+      </li>
+      <li>
+        <%= link_to dashboards_index_path do %>
+            <i class="fa fa-menu-arrow pull-right"></i>
+            <i class="main-icon fa fa-dashboard"></i> <span>个人中心</span>
+        <% end %>
+
+      </li>
+      <li>
+        <%= link_to jobs_path do %>
+            <i class="fa fa-menu-arrow pull-right"></i>
+            <i class="main-icon fa fa-dashboard"></i> <span>添加工作</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to articles_path do %>
+            <i class="fa fa-menu-arrow pull-right"></i>
+            <i class="main-icon fa fa-book"></i> <span>文集</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to teams_path(:user_id => current_user.id) do %>
+            <i class="fa fa-menu-arrow pull-right"></i>
+            <i class="main-icon fa fa-group"></i> <span>团队</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to profiles_path do %>
+            <i class="fa fa-menu-arrow pull-right"></i>
+            <i class="main-icon fa fa-user"></i> <span>档案</span>
+        <% end %>
+      </li>
+    </ul>
+
+    <!-- SECOND MAIN LIST -->
+    <h3>MORE</h3>
+    <ul class="nav nav-list">
+      <li>
+        <a href="calendar.html">
+          <i class="main-icon fa fa-calendar"></i>
+          <span class="label label-warning pull-right">2</span> <span>Calendar</span>
+        </a>
+      </li>
+      <li>
+        <a href="../../HTML/start.html">
+          <i class="main-icon fa fa-link"></i>
+          <span class="label label-danger pull-right">PRO</span> <span>Frontend</span>
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <span id="asidebg"><!-- aside fixed background --></span>
+</aside>
+<!-- /ASIDE -->

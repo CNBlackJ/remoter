@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  category: 
+  summary: MyString
+  description: MyText
+  requirement: MyText
+  read: 1
+  follow: 1
+  user_id:
+  team_id:
+  comment: 1
+
+two:
+  title: MyString
+  category: 
+  summary: MyString
+  description: MyText
+  requirement: MyText
+  read: 1
+  follow: 1
+  user_id:
+  team_id:
+  comment: 1

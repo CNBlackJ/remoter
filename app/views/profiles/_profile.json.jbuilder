@@ -1,0 +1,2 @@
+json.extract! profile, :id, :name, :email, :mobile, :nickname, :avatar, :sex, :introduce, :province, :city, :wechat, :weibo, :qq, :user_id, :created_at, :updated_at
+json.url profile_url(profile, format: :json)
