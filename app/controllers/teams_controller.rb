@@ -6,15 +6,7 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    if current_user
-<<<<<<< HEAD
-      user_team_id = User.find(params[:user_id]).team_id
-      users_id = User.where('team_id': user_team_id).select('id')
-      @profiles = Profile.where('user_id': users_id)
-=======
-      @teams = Team.all
->>>>>>> zhangyesheng/master
-    end
+    @teams = Team.all
   end
 
   # GET /teams/1

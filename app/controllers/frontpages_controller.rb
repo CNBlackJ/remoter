@@ -1,6 +1,7 @@
 class FrontpagesController < ApplicationController
   def index
     @jobs = Job.all
+    @teams = Team.all
   end
 
   def job

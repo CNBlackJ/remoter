@@ -12,300 +12,305 @@
 
     <div class="row mix-grid">
 
-      <div class="col-md-4 col-sm-4 mix_all all"><!-- item -->
+      <% @teams.each do |team| %>
 
-        <div class="item-box">
-          <figure>
+          <div class="col-md-4 col-sm-4 mix_all all"><!-- item -->
+
+            <div class="item-box">
+              <figure>
 										<span class="item-hover">
 											<span class="overlay dark-5"></span>
 											<span class="inner">
 
 												<!-- lightbox -->
 												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/11-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+                          <span class="fa fa-plus size-20"></span>
+                        </a>
 
                         <!-- details -->
 												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                          <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                        </a>
 
 											</span>
 										</span>
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/8-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+                <img class="img-responsive" src="<%= image_path 'frontpage/team/8-min.jpg' %>" width="600" height="399" alt="">
+              </figure>
 
-          <div class="item-box-desc">
-            <h3>Nature Photography</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Design</a></li>
-            </ul>
-          </div>
+              <div class="item-box-desc">
+                <h3><%= team.title %></h3>
+                <p>
+                  <%= team.description %>
+                </p>
+                <ul class="list-inline categories nomargin">
+                  <li><a href="#"><span class="fa fa-heart"><%= team.follow %></span></a></li>
+                </ul>
+              </div>
 
-        </div>
+            </div>
 
-      </div><!-- /item -->
+          </div><!-- /item -->
 
+      <% end %>
 
-      <div class="col-md-4 col-sm-4 mix_all photography"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all photography">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/20-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/20-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/1-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/1-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Fashion Design</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Design</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Fashion Design</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Photography</a></li>-->
+              <!--<li><a href="#">Design</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
 
-      <div class="col-md-4 col-sm-4 mix_all design"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all design">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/19-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/19-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/2-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/2-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Ocean Project</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Design</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Ocean Project</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Photography</a></li>-->
+              <!--<li><a href="#">Design</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
 
-      <div class="col-md-4 col-sm-4 mix_all design"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all design">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/12-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/12-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/3-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/3-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Architect Project</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Architecture</a></li>
-              <li><a href="#">Design</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Architect Project</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Architecture</a></li>-->
+              <!--<li><a href="#">Design</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
 
-      <div class="col-md-4 col-sm-4 mix_all development"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all development">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/13-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/13-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/4-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/4-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Speaker Design</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Audio</a></li>
-              <li><a href="#">Design</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Speaker Design</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Audio</a></li>-->
+              <!--<li><a href="#">Design</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
 
-      <div class="col-md-4 col-sm-4 mix_all photography"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all photography">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/14-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/14-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/5-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/5-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Mobile Development</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Design</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Mobile Development</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Development</a></li>-->
+              <!--<li><a href="#">Design</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
 
-      <div class="col-md-4 col-sm-4 mix_all design"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all design">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/15-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/15-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/6-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/6-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Nature Art</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Nature</a></li>
-              <li><a href="#">Art</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Nature Art</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Nature</a></li>-->
+              <!--<li><a href="#">Art</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
 
-      <div class="col-md-4 col-sm-4 mix_all design"><!-- item -->
+      <!--<div class="col-md-4 col-sm-4 mix_all design">&lt;!&ndash; item &ndash;&gt;-->
 
-        <div class="item-box">
-          <figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
+        <!--<div class="item-box">-->
+          <!--<figure>-->
+										<!--<span class="item-hover">-->
+											<!--<span class="overlay dark-5"></span>-->
+											<!--<span class="inner">-->
 
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/16-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus size-20"></span>
-												</a>
+												<!--&lt;!&ndash; lightbox &ndash;&gt;-->
+												<!--<a class="ico-rounded lightbox" href="assets/images/demo/mockups/1200x800/16-min.jpg" data-plugin-options='{"type":"image"}'>-->
+                          <!--<span class="fa fa-plus size-20"></span>-->
+                        <!--</a>-->
 
-                        <!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal size-20"></span>
-												</a>
+                        <!--&lt;!&ndash; details &ndash;&gt;-->
+												<!--<a class="ico-rounded" href="portfolio-single-slider.html">-->
+                          <!--<span class="glyphicon glyphicon-option-horizontal size-20"></span>-->
+                        <!--</a>-->
 
-											</span>
-										</span>
+											<!--</span>-->
+										<!--</span>-->
 
-            <img class="img-responsive" src="<%= image_path 'frontpage/team/7-min.jpg' %>" width="600" height="399" alt="">
-          </figure>
+            <!--<img class="img-responsive" src="<%= image_path 'frontpage/team/7-min.jpg' %>" width="600" height="399" alt="">-->
+          <!--</figure>-->
 
-          <div class="item-box-desc">
-            <h3>Nature Art</h3>
-            <ul class="list-inline categories nomargin">
-              <li><a href="#">Nature</a></li>
-              <li><a href="#">Art</a></li>
-            </ul>
-          </div>
+          <!--<div class="item-box-desc">-->
+            <!--<h3>Nature Art</h3>-->
+            <!--<ul class="list-inline categories nomargin">-->
+              <!--<li><a href="#">Nature</a></li>-->
+              <!--<li><a href="#">Art</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-      </div><!-- /item -->
+      <!--</div>&lt;!&ndash; /item &ndash;&gt;-->
 
     </div>
 
